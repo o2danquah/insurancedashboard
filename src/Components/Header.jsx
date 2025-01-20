@@ -14,19 +14,17 @@ function Header() {
       <nav className="navbar navbar-expand-lg navbar-light">
         <ul className="navbar-nav">
           <li className="nav-item d-block d-xl-none">
-            <a className="nav-link sidebartoggler " id="headerCollapse" href="javascript:void(0)">
+            <a className="nav-link sidebartoggler" id="headerCollapse">
               <i className="ti ti-menu-2" />
             </a>
           </li>
           <li className="nav-item ">
-            <a className="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown"  >
+            <a className="nav-link" data-bs-toggle="dropdown">
               <iconify-icon icon="solar:bell-linear" className="fs-6" />
               <div className="notification bg-primary rounded-circle" />
             </a>
 
             <ul className='dropdown-menu'>
-
-                //displays policies expiring in 8 months
                 <h5 className='text-center'> Expiring in Eight(8) Months</h5>
                 {ExpPolicies?.map(index => 
                    <li>
